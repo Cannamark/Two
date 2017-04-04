@@ -11,6 +11,10 @@ from oleo.views import send_email_cbd
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
+    url(r'^products/$', TemplateView.as_view(template_name='pages/products.html'), name='products'),
+    url(r'^advantage/$', TemplateView.as_view(template_name='pages/advantage.html'), name='advantage'),
+    url(r'^process/$', TemplateView.as_view(template_name='pages/process.html'), name='process'),
+    url(r'^cbdinfo/$', TemplateView.as_view(template_name='pages/cbdinfo.html'), name='cbdinfo'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
     url(r'^send', send_email_cbd, name='send_cbd'),
 
