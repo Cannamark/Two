@@ -7,15 +7,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
-from oleo.views import send_email_thc, send_email_cbd
+from oleo.views import send_email_cbd
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
-    url(r'^oleoTHC/$', TemplateView.as_view(template_name='pages/oleothc.html'), name='oleothc'),
-    url(r'^oleoCBD/$', TemplateView.as_view(template_name='pages/oleocbd.html'), name='oleocbd'),
-    url(r'^oleoTHC/send', send_email_thc, name='send_thc'),
-    url(r'^oleoCBD/send', send_email_cbd, name='send_cbd'),
+    url(r'^send', send_email_cbd, name='send_cbd'),
 
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, admin.site.urls),
