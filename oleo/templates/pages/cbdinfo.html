@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="navbar w-nav" data-animation="default" data-collapse="medium" data-contain="1" data-duration="400" style="background-color: transparent;">
+    <div class="w-container">
+      <a class="logo-block w-nav-brand" href="/"><img class="logo" sizes="(max-width: 479px) 61vw, (max-width: 767px) 121.34375px, 161.78125px" src="../static/images/oleo_logo_black_vector.png">
+      </a>
+      <nav class="nav-menu w-nav-menu" role="navigation">
+        <div class="dropdown w-dropdown" data-delay="0">
+          <a href="{% url 'cbdinfo' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Why Oleo CBD?</div>
+          </div></a>
+        </div>
+        <div class="dropdown w-dropdown" data-delay="0">
+          <a href="{% url 'products' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Products</div>
+          </div></a>
+        </div>
+        <div class="dropdown w-dropdown" data-delay="0">
+          <a href="https://shop.oleolife.com/"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Shop</div>
+          </div></a>
+        </div>
+        <div class="dropdown w-dropdown" data-delay="0">
+          <a href="{% url 'about' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>About</div>
+          </div></a>
+        </div>
+        <div class="dropdown w-dropdown" data-delay="0">
+          <a href="#contact"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Contact</div>
+          </div></a>
+        </div>
+      </nav>
+      <div class="transparant-menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

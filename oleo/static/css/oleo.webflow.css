@@ -2483,14 +2483,18 @@ figcaption {
   text-transform: uppercase;
 }
 
+.process-tab-button.special {
+  padding-top: 29px;
+}
+
 .process-tab-button:hover {
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
-  color: #1f6fff;
+  box-shadow: 0 0 30px 0 #1fdb6a;
+  color: black;
 }
 
 .process-tab-button.w--current {
   border-color: rgba(0, 0, 0, .1);
-  background-color: #fff;
+  background-color: #1fdb6a;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
   color: #000;
   text-align: center;
@@ -6798,12 +6802,12 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
     margin-top: 19px;
     margin-right: 4px;
     margin-left: 4px;
-    padding-top: 18px;
+    padding-top: 11px;
     border-width: 1px;
     border-color: rgba(0, 0, 0, .1);
   }
   .process-tab-button.special {
-    padding-top: 12px;
+    padding-top: 16px;
   }
   .process-tab-icon {
     height: 13px;

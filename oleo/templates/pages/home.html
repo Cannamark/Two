@@ -7,22 +7,13 @@
       </a>
       <nav class="nav-menu w-nav-menu" role="navigation">
         <div class="dropdown w-dropdown" data-delay="0">
-          <a href="{% url 'home' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
-            <div>Home</div>
-        </div></a>
+          <a href="{% url 'cbdinfo' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Why Oleo CBD?</div>
+          </div></a>
+        </div>
         <div class="dropdown w-dropdown" data-delay="0">
           <a href="{% url 'products' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
             <div>Products</div>
-          </div></a>
-        </div>
-        <div class="dropdown w-dropdown" data-delay="0">
-          <a href="{% url 'advantage' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
-            <div>Oleo Advantage</div>
-          </div></a>
-        </div>
-        <div class="dropdown w-dropdown" data-delay="0">
-          <a href="{% url 'process' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
-            <div>Oleo Process</div>
           </div></a>
         </div>
         <div class="dropdown w-dropdown" data-delay="0">
@@ -33,6 +24,11 @@
         <div class="dropdown w-dropdown" data-delay="0">
           <a href="{% url 'about' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
             <div>About</div>
+          </div></a>
+        </div>
+        <div class="dropdown w-dropdown" data-delay="0">
+          <a href="#contact"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Contact</div>
           </div></a>
         </div>
       </nav>
@@ -115,13 +111,13 @@
           <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Black_Label_3dMesh_Front.png">
             <div class="hero-slider-content-block">
               <h1 class="hero-slider-title" data-ix="slide-title" style="color:white;">Oleo<span class="smallify">&reg;</span> CBD Powder</h1>
-              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s Black Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">View Product</a>
+              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s Black Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">Visit the store!</a>
             </div>
           </div>
           <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Oleo_whitelabel.png">
             <div class="hero-slider-content-block">
               <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">Oleo<span class="smallify">&reg;</span> CBD Powder</h1>
-              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s White Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">View Product</a>
+              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s White Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">Visit the store!</a>
             </div>
           </div>
         </div>
@@ -137,48 +133,56 @@
     </div>
   </div>
 
-  <div class="section" id="questions">
-    <div class="above-image-section container w-container">
-      <div class="feature-info-row w-row">
-        <div class="section-title-wrapper">
-          <div class="section-title"> Frequently Asked Questions</div>
-        </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 1</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
-          </div>
-        </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 2</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
-          </div>
-        </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 3</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
-          </div>
-        </div>
+  <div class="section" id="what">
+    <div class="container w-container">
+      <div class="section-title-wrapper">
+        <h2 class="section-title">What is CBD?</h2>
+        <div class="section-description">CBD has become a highly sought after compound in recent years, taking the natural products industry by storm after receiving highly publicized exposure in the media. Learn more at our <a href="{% url 'cbdinfo' %}" style="color:green;">"Why Oleo CBD?"</a> page.</div>
       </div>
-      <div class="feature-info-row w-row">
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 4</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
-          </div>
+      <div class="process-tabs-line w-hidden-tiny"></div>
+      <div class="process-tabs w-tabs" data-duration-in="300" data-duration-out="100">
+        <div class="process-tab-menu w-tab-menu">
+          <a class="process-tab-button special w--current w-inline-block w-tab-link" data-w-tab="Tab 1">
+            <div>What is CBD?</div>
+          </a>
+          <a class="process-tab-button w-inline-block w-tab-link" data-w-tab="Tab 2">
+            <div>Where do we source our CBD?</div>
+          </a>
+          <a class="process-tab-button w-inline-block w-tab-link" data-w-tab="Tab 3">
+            <div>Will I get high from CBD?</div>
+          </a>
+          <a class="process-tab-button special w-inline-block w-tab-link" data-w-tab="Tab 4">
+            <div>How is CBD beneficial?</div>
+          </a>
         </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 5</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+        <div class="w-tab-content">
+          <div class="process-tab-pane w-tab-pane" data-w-tab="Tab 1">
+            <div class="process-tab-row w-row">
+              <div class="process-tab-col-left w-col">
+                <div class="process-tab-title">CBD, or cannabidiol, is one of more than 80 cannabinoids found in the cannabis plant. CBD and THC are the most commonly occurring of these compounds, but CBD is non-psychoactive whereas THC is generally consumed because of its ‘high’.</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 6</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+          <div class="process-tab-pane w--tab-active w-tab-pane" data-w-tab="Tab 2">
+            <div class="process-tab-row w-row">
+              <div class="process-tab-col-left w-col">
+                <div class="process-tab-title">We only source from organic, non-GMO, industrial hemp. Because this CBD is sourced from only from mature stalks of these industrial hemp plants it is fully legal in all areas of the United States.</div>
+              </div>
+            </div>
+          </div>
+          <div class="process-tab-pane w--tab-active w-tab-pane" data-w-tab="Tab 3">
+            <div class="process-tab-row w-row">
+              <div class="process-tab-col-left w-col">
+                <div class="process-tab-title">No. CBD interacts with our body's naturally occurring systems, but is non-psychotropic unlike THC which causes the 'high'. CDB doesn’t cause a high.</div>
+              </div>
+            </div>
+          </div>
+          <div class="process-tab-pane w--tab-active w-tab-pane" data-w-tab="Tab 4">
+            <div class="process-tab-row w-row">
+              <div class="process-tab-col-left w-col">
+                <div class="process-tab-title">We are not at liberty to make medical claims regarding the effects of CBD. We encourage you to do your own research. A 2013 review published in the British Journal of Clinical Pharmacology, as well as a 2003 U.S. Government Patent, found that CBD acts as an antioxidant, reducing free radicals that can cause neurodegenerative disorders. The 2013 study, along with the clinical trials performed in the 2003 patent claims a list many potential health benefits. These and other credible sources can be found with your own due diligence.</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
