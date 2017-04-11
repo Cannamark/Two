@@ -6,6 +6,10 @@
       <a class="logo-block w-nav-brand" href="/"><img class="logo" sizes="(max-width: 479px) 61vw, (max-width: 767px) 121.34375px, 161.78125px" src="../static/images/oleo_logo_black_vector.png">
       </a>
       <nav class="nav-menu w-nav-menu" role="navigation">
+      <div class="dropdown w-dropdown" data-delay="0">
+          <a href="{% url 'home' %}"<div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Home</div>
+        </div></a>
         <div class="dropdown w-dropdown" data-delay="0">
           <a href="{% url 'cbdinfo' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
             <div>Why Oleo CBD?</div>
@@ -26,11 +30,6 @@
             <div>About</div>
           </div></a>
         </div>
-        <div class="dropdown w-dropdown" data-delay="0">
-          <a href="#contact"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
-            <div>Contact</div>
-          </div></a>
-        </div>
       </nav>
       <div class="transparant-menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>
@@ -47,60 +46,57 @@
   <div class="buffer section">
     <div class="centered container w-container">
       <div class="contact full-centered section-title-wrapper">
-        <h2 class="section-title buffer">CBD is the future of health supplements (or something like that)</h2>
-        <div class="cta-title subtitle buffer">Oleo&reg; CBD powder is the Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</div>
+        <h2 class="section-title buffer">Oleo CBD revolutionizes the effectiveness, reliability, and usability of CBD Powder.</h2>
+        <div class="cta-title subtitle buffer">Our patented encapsulation technology improves the effectiveness of your CBD, lowers the cost of your treatment, and provides exciting and delicious powder mixes that can be used in any drink or recipe.</div>
       </div>
     </div>
   </div>
 
   <div class="block-section-wrapper w-clearfix">
+    <div class="half-content-section left">
+      <div class="content-section-block left">
+        <div class="full info section-title-wrapper">
+          <h2 class="section-title">Curious about CBD</h2>
+        </div>
+        <p class="intro-paragraph">We strive to inform all of our customers about the benefits of consuming CBD in its most effective form.</p>
+        <ul class="checklist w-list-unstyled">
+          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
+            <p>Wonder where we get our CBD?</p>
+          </li>
+          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
+            <p>Will CBD get you 'high'?</p>
+          </li>
+          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
+            <p>What is CBD?</p>
+          </li>
+        </ul>
+        <a class="button green w-button" href="#what">Let us help</a>
+      </div>
+    </div>
+    <div class="half-image-section right"></div>
+  </div>
+  <div class="block-section-wrapper w-clearfix">
     <div class="half-image-section"></div>
     <div class="half-content-section w-clearfix">
       <div class="content-section-block">
         <div class="full info section-title-wrapper">
-          <h2 class="section-title">Some information on Oleo<span class="smallify">&reg;</span> CBD</h2>
+          <h2 class="section-title">Why use Oleo CBD</h2>
         </div>
-        <p class="intro-paragraph">Like Why it is the best CBD product on the market.</p>
+        <p class="intro-paragraph">OleoCBD powder's patented Process provides unique advantages over competitors.</p>
         <ul class="checklist w-list-unstyled">
           <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Higher bioavailability.</p>
           </li>
           <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Duis cursus, mi quis viverra ornare, eros dolor.</p>
+            <p>Cleaner, better flavor profiles.</p>
           </li>
           <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Elementum tristique. Duis cursus.</p>
+            <p>Consistant, reliable dosing.</p>
           </li>
         </ul>
-        <a class="button green w-button" href="https://store.oleolife.com/">Visit the Store</a>
+        <a class="button green w-button" href="{% url 'cbdinfo' %}">Learn More</a>
       </div>
     </div>
-  </div>
-  <div class="block-section-wrapper w-clearfix">
-    <div class="half-content-section left">
-      <div class="content-section-block left">
-        <div class="full info section-title-wrapper">
-          <h2 class="section-title">Maybe list out health benefits of CBD.</h2>
-        </div>
-        <p class="intro-paragraph">Or it might make sense to swap this content with the content above, so they're more enticed to buy.</p>
-        <ul class="checklist w-list-unstyled">
-          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </li>
-          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Duis cursus, mi quis viverra ornare, eros dolor.</p>
-          </li>
-          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Elementum tristique. Duis cursus.</p>
-          </li>
-        </ul>
-        <a class="button green w-button" href="#questions">Learn more</a>
-      </div>
-    </div>
-    <div class="half-image-section right"></div>
   </div>
 
   <div class="hero-slider-section cbd">
@@ -110,14 +106,26 @@
         <div class="w-slider-mask">
           <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Black_Label_3dMesh_Front.png">
             <div class="hero-slider-content-block">
-              <h1 class="hero-slider-title" data-ix="slide-title" style="color:white;">Oleo<span class="smallify">&reg;</span> CBD Powder</h1>
-              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s Black Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">Visit the store!</a>
+              <h1 class="hero-slider-title" data-ix="slide-title" style="color:white;">OleoCBD Tea Mix</h1>
+              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Unwind and relax with our new natural tea blends. Drink your tensions away with the all natural effects of organic CBD.</p><a class="button outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com/collections/cbd-products/products/oleo-cbd-tea-mix" target="_blank" style="color:white;">View Product</a>
             </div>
           </div>
           <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Oleo_whitelabel.png">
             <div class="hero-slider-content-block">
-              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">Oleo<span class="smallify">&reg;</span> CBD Powder</h1>
-              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s White Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">Visit the store!</a>
+              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">OleoCBD Coconut Water</h1>
+              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">A great, all natural way to hydrate and replenish your body. Loaded with electrolytes, vitamins, minerals. Our CBD Coconut Water allows your body to recover faster after a hard workout and provides a natural way to sooth sore muscles. </p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com/collections/cbd-products/products/oleo-cbd-coconut-water" target="_blank" style="color:white;">View Product</a>
+            </div>
+          </div>
+          <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Oleo_whitelabel.png">
+            <div class="hero-slider-content-block">
+              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">OleoCBD Base Powder</h1>
+              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Our water-soluble OleoCBD base powder is the most reliable and consistent way to add CBD to any of your current product lines, or create exciting new ones. OleoCBD Base Powder is highly bioavailable, allowing your customers to get the most out of their medicine.</p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com/collections/cbd-products/products/oleocbd-base-powder" target="_blank" style="color:white;">View Product</a>
+            </div>
+          </div>
+          <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Oleo_whitelabel.png">
+            <div class="hero-slider-content-block">
+              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">OleoCBD Ready-to-Mix</h1>
+              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Oleo’s clean and clear Ready-to-Mix formulation allows you to add organic CBD to any drink or food with a simple scoop. Add it to your coffee or smoothie in the morning, a glass of water, or even a bowl of soup. Simply scoop and enjoy!</p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com/collections/cbd-products/products/oleocbd-ready-to-mix" target="_blank" style="color:white;">View Product</a>
             </div>
           </div>
         </div>
@@ -192,7 +200,7 @@
     <div class="image-section-overlay white-gradient">
       <div class="centered container w-container">
         <div class="section-title-wrapper">
-          <div class="section-title"> Don't hestate to Contact Us!</div>
+          <h2 class="section-title"> Don't hestate to Contact Us!</h2>
         </div>
         <div class="contact-column-left w-col w-col-6">
           <div class="contact-form-block w-form">

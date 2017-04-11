@@ -52,6 +52,7 @@ h5 {
 }
 
 p {
+  font-family: Merriweather, serif;
   margin-bottom: 15px;
 }
 
@@ -86,6 +87,38 @@ figcaption {
   line-height: 18px;
   text-align: center;
 }
+
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+
+.thumbnail > img {
+  width: 250px;
+  height: 300px;
+}
+ 
+.caption {
+    position:absolute;
+    top:-100%;
+    right:0;
+    background:rgba(41,41,41,.9);
+    width:100%;
+    height:100%;
+    padding:2%;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.thumbnail:hover .caption {
+    top:0%;
+}
+    
 
 .smallify {
   font-size: 16px;
@@ -721,6 +754,11 @@ figcaption {
   font-size: 36px;
 }
 
+.section-title.products {
+  padding: 15px 0px 5px 0px;
+  line-height: normal;
+}
+
 .section-title.elements-title {
   margin-bottom: 0px;
 }
@@ -873,6 +911,9 @@ figcaption {
   margin-bottom: 20px;
 }
 
+.protfolio-image-block {
+  background-image: url('../images/product_tubes.png');
+};
 .portfolio-image-block._2 {
   background-image: url('../images/Photo-12.jpg');
 }
@@ -3421,6 +3462,15 @@ figcaption {
   background-size: auto, cover;
   color: #fff;
   text-align: center;
+}
+
+.subpage-header.products {
+  background-color: white;
+  background-image: none;
+  font-size: 52px;
+  padding-top: 185px;
+  padding-bottom: 20px;
+  color: black;
 }
 
 .subpage-header.pricing-3 {
@@ -6351,6 +6401,10 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
   h2 {
     font-size: 24px;
     line-height: 29px;
+  }
+  .thumbnail > img {
+    height: auto;
+    width: auto;
   }
   .hero-section.color {
     padding-top: 175px;

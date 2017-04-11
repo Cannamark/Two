@@ -7,6 +7,10 @@
       </a>
       <nav class="nav-menu w-nav-menu" role="navigation">
         <div class="dropdown w-dropdown" data-delay="0">
+          <a href="{% url 'home' %}"><div class="dropdown-toggle nav-link w-dropdown-toggle">
+            <div>Home</div>
+        </div></a>
+        <div class="dropdown w-dropdown" data-delay="0">
           <a href="{% url 'cbdinfo' %}"><div class="dropdown-toggle nav-link w-dropdown-toggle">
             <div>Why Oleo CBD?</div>
           </div></a>
@@ -26,11 +30,6 @@
             <div>About</div>
           </div></a>
         </div>
-        <div class="dropdown w-dropdown" data-delay="0">
-          <a href="#contact"><div class="dropdown-toggle nav-link w-dropdown-toggle">
-            <div>Contact</div>
-          </div></a>
-        </div>
       </nav>
       <div class="transparant-menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>
@@ -41,6 +40,7 @@
   <div class="portfolio subpage-header">
     <div class="container w-container">
       <h2 class="subpage-title" data-ix="fade-in-on-load">Providing you with the Highest Quality CBD Powder is Oleo's Mission</h2>
+      <h4 data-ix="fade-in-on-load">(Press buttons below to explore Oleo's Advantage and Process)</h4>
       <a class="button green w-button" id="advantage-trigger">Oleo Advantage</a><a class="button green w-button" id="process-trigger" style="margin-left: 5px;">Oleo Process</a>
     </div>
   </div>
@@ -83,7 +83,7 @@
             <div class="cta-title subtitle">
             <ul class="checklist w-list-unstyled">
               <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">Once encapsulated, we blend OleoCBD into our delicious drink mixes and provide it to manufacturers for use in developing their own products. Our goal is to share the benefits of water soluble CBD and empower consumers improve their wellness through the best possible products.</li><br/>
-              <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">If you’d like to learn about how you can make use of the Oleo Process in your products then contact us</li></ul><br/>
+              <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">If you’d like to learn about how you can make use of the Oleo Process in your products then <a href="/#contact">contact us</a></li></ul><br/>
         </div>
       </div>
     </div>
