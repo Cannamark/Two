@@ -4371,3 +4371,18 @@ Webflow.require('ix').init([
   {"slug":"show-gallery-overlay","name":"Show Gallery Overlay","value":{"style":{},"triggers":[{"type":"hover","selector":".gallery-overlay-block","descend":true,"stepsA":[{"display":"block","opacity":1,"transition":"opacity 400ms ease 0ms"}],"stepsB":[{"opacity":0,"transition":"opacity 300ms ease 0ms"},{"display":"none"}]}]}},
   {"slug":"fade-in-on-load-5","name":"Fade in on Load 5","value":{"style":{"opacity":0,"x":"0px","y":"30px","z":"0px"},"triggers":[{"type":"load","stepsA":[{"wait":200},{"display":"block","opacity":0.5,"transition":"transform 500ms ease 0ms, opacity 500ms ease 0ms","x":"0px","y":"0px","z":"0px"}],"stepsB":[]}]}}
 ]);
+
+$(document).ready(function(){
+  $('#advantage').hide();
+  $('#process').hide();
+
+  $('#advantage-trigger').click(function(){
+    $('#advantage').fadeIn();
+    $('#process').hide();
+  });
+  $('#process-trigger').click(function(){
+    $('#process').fadeIn();
+    $('#advantage').hide();
+  });
+})
+

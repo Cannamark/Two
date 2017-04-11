@@ -52,6 +52,7 @@ h5 {
 }
 
 p {
+  font-family: Merriweather, serif;
   margin-bottom: 15px;
 }
 
@@ -86,6 +87,38 @@ figcaption {
   line-height: 18px;
   text-align: center;
 }
+
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+
+.thumbnail > img {
+  width: 250px;
+  height: 300px;
+}
+ 
+.caption {
+    position:absolute;
+    top:-100%;
+    right:0;
+    background:rgba(41,41,41,.9);
+    width:100%;
+    height:100%;
+    padding:2%;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.thumbnail:hover .caption {
+    top:0%;
+}
+    
 
 .smallify {
   font-size: 16px;
@@ -721,6 +754,11 @@ figcaption {
   font-size: 36px;
 }
 
+.section-title.products {
+  padding: 15px 0px 5px 0px;
+  line-height: normal;
+}
+
 .section-title.elements-title {
   margin-bottom: 0px;
 }
@@ -873,6 +911,9 @@ figcaption {
   margin-bottom: 20px;
 }
 
+.protfolio-image-block {
+  background-image: url('../images/product_tubes.png');
+};
 .portfolio-image-block._2 {
   background-image: url('../images/Photo-12.jpg');
 }
@@ -2483,14 +2524,18 @@ figcaption {
   text-transform: uppercase;
 }
 
+.process-tab-button.special {
+  padding-top: 29px;
+}
+
 .process-tab-button:hover {
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
-  color: #1f6fff;
+  box-shadow: 0 0 30px 0 #1fdb6a;
+  color: black;
 }
 
 .process-tab-button.w--current {
   border-color: rgba(0, 0, 0, .1);
-  background-color: #fff;
+  background-color: #1fdb6a;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
   color: #000;
   text-align: center;
@@ -3409,14 +3454,23 @@ figcaption {
 }
 
 .subpage-header {
-  padding-top: 50px;
-  padding-bottom: 100px;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/Beachparty.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/Beachparty.jpg');
+  padding-top: 150px;
+  padding-bottom: 80px;
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/green_leaf.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/green_leaf.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   color: #fff;
   text-align: center;
+}
+
+.subpage-header.products {
+  background-color: white;
+  background-image: none;
+  font-size: 52px;
+  padding-top: 185px;
+  padding-bottom: 20px;
+  color: black;
 }
 
 .subpage-header.pricing-3 {
@@ -3696,15 +3750,18 @@ figcaption {
 }
 
 .cta-title {
+  text-align: center;
   font-family: Montserrat, sans-serif;
-  font-size: 24px;
+  font-size: 32px;
+  margin-bottom: 7%;
 }
 
 .cta-title.subtitle {
+  text-align: left;
   margin-top: 20px;
   font-family: Merriweather, serif;
   color: #5a5a5a;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .cta-title.subtitle.buffer {
@@ -6345,6 +6402,10 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
     font-size: 24px;
     line-height: 29px;
   }
+  .thumbnail > img {
+    height: auto;
+    width: auto;
+  }
   .hero-section.color {
     padding-top: 175px;
     padding-bottom: 0px;
@@ -6798,12 +6859,12 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
     margin-top: 19px;
     margin-right: 4px;
     margin-left: 4px;
-    padding-top: 18px;
+    padding-top: 11px;
     border-width: 1px;
     border-color: rgba(0, 0, 0, .1);
   }
   .process-tab-button.special {
-    padding-top: 12px;
+    padding-top: 16px;
   }
   .process-tab-icon {
     height: 13px;
