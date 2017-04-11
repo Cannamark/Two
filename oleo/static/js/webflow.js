@@ -4377,11 +4377,11 @@ $(document).ready(function(){
   $('#process').hide();
 
   $('#advantage-trigger').click(function(){
-    $('#advantage').show();
+    $('#advantage').fadeIn();
     $('#process').hide();
   });
   $('#process-trigger').click(function(){
-    $('#process').show();
+    $('#process').fadeIn();
     $('#advantage').hide();
   });
 })
