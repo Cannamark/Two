@@ -21,8 +21,8 @@
           </div></a>
         </div>
         <div class="dropdown w-dropdown" data-delay="0">
-          <a href="https://shop.oleolife.com/"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
-            <div>Shop</div>
+          <a href="#contact"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Contact Us</div>
           </div></a>
         </div>
         <div class="dropdown w-dropdown" data-delay="0">
@@ -39,24 +39,47 @@
   
   <div class="color hero-section">
     <div class="container hero-container w-container">
-      <div class="small-hero-intro-title" style="color:black;" data-ix="fade-in-on-load-5"><span class="hero-split" data-ix="fade-in-on-load-3">Well Being.</span><span class="hero-split" data-ix="fade-in-on-load-3"> Health.</span><span class="hero-split" data-ix="fade-in-on-load-3"> Ease.</span></div>
+      <div class="small-hero-intro-title" style="color:black;" data-ix="fade-in-on-load-5"><span class="hero-split" data-ix="fade-in-on-load-3">Health.</span><span class="hero-split" data-ix="fade-in-on-load-3"> Well Being.</span><span class="hero-split" data-ix="fade-in-on-load-3"> Ease.</span></div>
     </div>
   </div>
 
   <div class="buffer section">
     <div class="centered container w-container">
       <div class="contact full-centered section-title-wrapper">
-        <h2 class="section-title buffer">Oleo CBD revolutionizes the effectiveness, reliability, and usability of CBD Powder.</h2>
-        <div class="cta-title subtitle buffer">Our patented encapsulation technology improves the effectiveness of your CBD, lowers the cost of your treatment, and provides exciting and delicious powder mixes that can be used in any drink or recipe.</div>
+        <h2 class="section-title buffer">Oleo CBD revolutionizes the effectiveness, reliability, and usability of CBD.</h2>
+        <div class="cta-title subtitle buffer" style="text-align: center;">Our patented encapsulation technology improves the effectiveness of your CBD, lowers the cost of your treatment, and provides exciting and delicious mixes that can be used in any drink or recipe.</div>
       </div>
     </div>
   </div>
 
   <div class="block-section-wrapper w-clearfix">
+    <a href="{% url 'cbdinfo' %}"><div class="half-image-section"></div></a>
+    <div class="half-content-section w-clearfix">
+      <div class="content-section-block">
+        <div class="full info section-title-wrapper">
+          <h2 class="section-title">Why use Oleo CBD?</h2>
+        </div>
+        <p class="intro-paragraph">OleoCBD powder's patented Process provides unique advantages over competitors.</p>
+        <ul class="checklist w-list-unstyled">
+          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
+            <p>Higher bioavailability.</p>
+          </li>
+          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
+            <p>Cleaner, better flavor profiles.</p>
+          </li>
+          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
+            <p>Consistant, reliable dosing.</p>
+          </li>
+        </ul>
+        <a class="button green w-button" href="{% url 'cbdinfo' %}">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="block-section-wrapper w-clearfix">
     <div class="half-content-section left">
       <div class="content-section-block left">
         <div class="full info section-title-wrapper">
-          <h2 class="section-title">Curious about CBD</h2>
+          <h2 class="section-title">Curious about CBD?</h2>
         </div>
         <p class="intro-paragraph">We strive to inform all of our customers about the benefits of consuming CBD in its most effective form.</p>
         <ul class="checklist w-list-unstyled">
@@ -75,29 +98,6 @@
     </div>
     <div class="half-image-section right"></div>
   </div>
-  <div class="block-section-wrapper w-clearfix">
-    <div class="half-image-section"></div>
-    <div class="half-content-section w-clearfix">
-      <div class="content-section-block">
-        <div class="full info section-title-wrapper">
-          <h2 class="section-title">Why use Oleo CBD</h2>
-        </div>
-        <p class="intro-paragraph">OleoCBD powder's patented Process provides unique advantages over competitors.</p>
-        <ul class="checklist w-list-unstyled">
-          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Higher bioavailability.</p>
-          </li>
-          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Cleaner, better flavor profiles.</p>
-          </li>
-          <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Consistant, reliable dosing.</p>
-          </li>
-        </ul>
-        <a class="button green w-button" href="{% url 'cbdinfo' %}">Learn More</a>
-      </div>
-    </div>
-  </div>
 
   <div class="hero-slider-section cbd">
     <div class="image-section-overlay cbd">
@@ -114,12 +114,6 @@
             <div class="hero-slider-content-block">
               <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">OleoCBD Coconut Water</h1>
               <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">A great, all natural way to hydrate and replenish your body. Loaded with electrolytes, vitamins, minerals. Our CBD Coconut Water allows your body to recover faster after a hard workout and provides a natural way to sooth sore muscles. </p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com/collections/cbd-products/products/oleo-cbd-coconut-water" target="_blank" style="color:white;">View Product</a>
-            </div>
-          </div>
-          <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Oleo_whitelabel.png">
-            <div class="hero-slider-content-block">
-              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">OleoCBD Base Powder</h1>
-              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Our water-soluble OleoCBD base powder is the most reliable and consistent way to add CBD to any of your current product lines, or create exciting new ones. OleoCBD Base Powder is highly bioavailable, allowing your customers to get the most out of their medicine.</p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com/collections/cbd-products/products/oleocbd-base-powder" target="_blank" style="color:white;">View Product</a>
             </div>
           </div>
           <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Oleo_whitelabel.png">
@@ -157,7 +151,7 @@
             <div>Where do we source our CBD?</div>
           </a>
           <a class="process-tab-button w-inline-block w-tab-link" data-w-tab="Tab 3">
-            <div>Will I get high from CBD?</div>
+            <div>Is CBD psychoactive?</div>
           </a>
           <a class="process-tab-button special w-inline-block w-tab-link" data-w-tab="Tab 4">
             <div>How is CBD beneficial?</div>
@@ -181,7 +175,7 @@
           <div class="process-tab-pane w--tab-active w-tab-pane" data-w-tab="Tab 3">
             <div class="process-tab-row w-row">
               <div class="process-tab-col-left w-col">
-                <div class="process-tab-title">No. CBD interacts with our body's naturally occurring systems, but is non-psychotropic unlike THC which causes the 'high'. CDB doesn’t cause a high.</div>
+                <div class="process-tab-title">No. CBD interacts with our body's naturally occurring systems, but is non-psychotropic unlike THC which causes the 'high'.</div>
               </div>
             </div>
           </div>
@@ -200,7 +194,7 @@
     <div class="image-section-overlay white-gradient">
       <div class="centered container w-container">
         <div class="section-title-wrapper">
-          <h2 class="section-title"> Don't hestate to Contact Us!</h2>
+          <h2 class="section-title"> We'd love to hear from you.</h2>
         </div>
         <div class="contact-column-left w-col w-col-6">
           <div class="contact-form-block w-form">
