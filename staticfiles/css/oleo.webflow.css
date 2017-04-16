@@ -1918,7 +1918,7 @@ figcaption {
   padding-top: 13px;
   border: 3px solid #3b3f46;
   border-radius: 100%;
-  background-color: #1f6fff;
+  background-color: #00a939;
   -webkit-transform: translate(0px, -50%);
   -ms-transform: translate(0px, -50%);
   transform: translate(0px, -50%);
@@ -2066,8 +2066,8 @@ figcaption {
   right: 0px;
   width: 100%;
   height: 40px;
-  background-image: -webkit-linear-gradient(270deg, #3b3f46, rgba(59, 63, 70, 0));
-  background-image: linear-gradient(180deg, #3b3f46, rgba(59, 63, 70, 0));
+/*  background-image: -webkit-linear-gradient(270deg, #3b3f46, rgba(59, 63, 70, 0));
+  background-image: linear-gradient(180deg, #3b3f46, rgba(59, 63, 70, 0));*/
 }
 
 .experience-item-row {
@@ -3281,9 +3281,14 @@ figcaption {
   width: 50%;
   height: 500px;
   float: left;
-  background-image: url('../images/drinking-water1.jpg');
-  background-position: 20% 0%;
+  background-image: url('../images/Oleo_Advantage.jpg');
+  background-position: 0% 0%;
   background-size: cover;
+}
+
+.half-image-section:hover{
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
 }
 
 .half-image-section.right {
@@ -3488,8 +3493,8 @@ figcaption {
 
 .subpage-header.about-1 {
   padding-top: 190px;
-  background-image: -webkit-linear-gradient(270deg, rgba(25, 27, 31, .9), rgba(25, 27, 31, .8)), url('../images/Oleo-product-1.jpg');
-  background-image: linear-gradient(180deg, rgba(25, 27, 31, .9), rgba(25, 27, 31, .8)), url('../images/Oleo-product-1.jpg');
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 169, 57, .7), rgba(0, 169, 57, .7)), url('../images/Seattle.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 169, 57, .7), rrgba(0, 169, 57, .7)), url('../images/Seattle.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   text-align: left;
