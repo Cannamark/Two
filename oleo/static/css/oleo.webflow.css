@@ -94,7 +94,6 @@ figcaption {
 }
 
 .thumbnail > img {
-  width: 250px;
   height: 300px;
 }
  
@@ -641,6 +640,12 @@ figcaption {
 
 .section.bottom-line {
   border-bottom: 1px solid #e2e2e2;
+}
+
+.greenborder {
+  border-color: #1fdb6a;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .section.top-line {
