@@ -2745,7 +2745,7 @@ figcaption {
   opacity: 0.35;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
-  font-size: 18px;
+  font-size: 35px;
 }
 
 .hero-slider-arrow:hover {
