@@ -1236,7 +1236,7 @@ figcaption {
 
 .small-hero-intro-title {
   font-size: 40px;
-  margin-bottom: 220px;
+  margin-bottom: 280px;
   color: rgb(0, 169, 57) !important;
   opacity: 0.9 !important;
   font-family: Montserrat, sans-serif;
@@ -1877,7 +1877,8 @@ figcaption {
 .experience-timeline-list {
   margin-top: -40px;
   margin-bottom: 40px;
-  margin-left: 25px;
+  margin-left: 11%;
+  margin-right: 8%;
 }
 
 .experience-timeline-list-item {
@@ -1915,8 +1916,8 @@ figcaption {
 
 .experience-icon-block {
   position: absolute;
-  left: -30px;
-  top: 53%;
+  left: 15px;
+  top: 24%;
   z-index: 10;
   width: 55px;
   height: 55px;
@@ -1931,7 +1932,7 @@ figcaption {
 }
 
 .experience-icon-block.first {
-  top: 65%;
+  top: 46%;
 }
 
 .experience-icon {
@@ -2078,7 +2079,7 @@ figcaption {
 .experience-item-row {
   padding-top: 25px;
   padding-bottom: 15px;
-  padding-left: 45px;
+  padding-left: 70px;
   border-radius: 4px;
   background-color: transparent;
   -webkit-transition: background-color 200ms ease;
