@@ -65,7 +65,7 @@ X_FRAME_OPTIONS = 'DENY'
 # ------------------------------------------------------------------------------
 # Hosts/domain names that are valid for this site
 # See https://docs.djangoproject.com/en/1.10/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['example.com', ])
+ALLOWED_HOSTS = ['oleolife.com', 'www.oleolife.com', '.herokuapp.com']
 # END SITE CONFIGURATION
 
 INSTALLED_APPS += ('gunicorn', )

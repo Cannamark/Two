@@ -52,6 +52,7 @@ h5 {
 }
 
 p {
+  font-family: Merriweather, serif;
   margin-bottom: 15px;
 }
 
@@ -86,6 +87,37 @@ figcaption {
   line-height: 18px;
   text-align: center;
 }
+
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+
+.thumbnail > img {
+  height: 300px;
+}
+ 
+.caption {
+    position:absolute;
+    top:-100%;
+    right:0;
+    background:rgba(41,41,41,.9);
+    width:100%;
+    height:100%;
+    padding:2%;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.thumbnail:hover .caption {
+    top:0%;
+}
+    
 
 .smallify {
   font-size: 16px;
@@ -610,6 +642,12 @@ figcaption {
   border-bottom: 1px solid #e2e2e2;
 }
 
+.greenborder {
+  border-color: #1fdb6a;
+  border-width: 1px;
+  border-style: solid;
+}
+
 .section.top-line {
   border-bottom: 1px solid #e2e2e2;
   background-color: #1fdb6a;
@@ -719,6 +757,11 @@ figcaption {
   margin-top: 0px;
   font-family: Montserrat, sans-serif;
   font-size: 36px;
+}
+
+.section-title.products {
+  padding: 15px 0px 5px 0px;
+  line-height: normal;
 }
 
 .section-title.elements-title {
@@ -873,6 +916,9 @@ figcaption {
   margin-bottom: 20px;
 }
 
+.protfolio-image-block {
+  background-image: url('../images/product_tubes.png');
+};
 .portfolio-image-block._2 {
   background-image: url('../images/Photo-12.jpg');
 }
@@ -1190,7 +1236,7 @@ figcaption {
 
 .small-hero-intro-title {
   font-size: 40px;
-  margin-bottom: 220px;
+  margin-bottom: 280px;
   color: rgb(0, 169, 57) !important;
   opacity: 0.9 !important;
   font-family: Montserrat, sans-serif;
@@ -1831,7 +1877,8 @@ figcaption {
 .experience-timeline-list {
   margin-top: -40px;
   margin-bottom: 40px;
-  margin-left: 25px;
+  margin-left: 11%;
+  margin-right: 8%;
 }
 
 .experience-timeline-list-item {
@@ -1869,15 +1916,15 @@ figcaption {
 
 .experience-icon-block {
   position: absolute;
-  left: -30px;
-  top: 53%;
+  left: 15px;
+  top: 24%;
   z-index: 10;
   width: 55px;
   height: 55px;
   padding-top: 13px;
   border: 3px solid #3b3f46;
   border-radius: 100%;
-  background-color: #1f6fff;
+  background-color: #00a939;
   -webkit-transform: translate(0px, -50%);
   -ms-transform: translate(0px, -50%);
   transform: translate(0px, -50%);
@@ -1885,7 +1932,7 @@ figcaption {
 }
 
 .experience-icon-block.first {
-  top: 65%;
+  top: 46%;
 }
 
 .experience-icon {
@@ -2025,14 +2072,14 @@ figcaption {
   right: 0px;
   width: 100%;
   height: 40px;
-  background-image: -webkit-linear-gradient(270deg, #3b3f46, rgba(59, 63, 70, 0));
-  background-image: linear-gradient(180deg, #3b3f46, rgba(59, 63, 70, 0));
+/*  background-image: -webkit-linear-gradient(270deg, #3b3f46, rgba(59, 63, 70, 0));
+  background-image: linear-gradient(180deg, #3b3f46, rgba(59, 63, 70, 0));*/
 }
 
 .experience-item-row {
   padding-top: 25px;
   padding-bottom: 15px;
-  padding-left: 45px;
+  padding-left: 70px;
   border-radius: 4px;
   background-color: transparent;
   -webkit-transition: background-color 200ms ease;
@@ -2483,14 +2530,18 @@ figcaption {
   text-transform: uppercase;
 }
 
+.process-tab-button.special {
+  padding-top: 29px;
+}
+
 .process-tab-button:hover {
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
-  color: #1f6fff;
+  box-shadow: 0 0 30px 0 #1fdb6a;
+  color: black;
 }
 
 .process-tab-button.w--current {
   border-color: rgba(0, 0, 0, .1);
-  background-color: #fff;
+  background-color: #1fdb6a;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
   color: #000;
   text-align: center;
@@ -2695,7 +2746,7 @@ figcaption {
   opacity: 0.35;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
-  font-size: 18px;
+  font-size: 35px;
 }
 
 .hero-slider-arrow:hover {
@@ -3236,9 +3287,14 @@ figcaption {
   width: 50%;
   height: 500px;
   float: left;
-  background-image: url('../images/drinking-water1.jpg');
-  background-position: 20% 0%;
+  background-image: url('../images/Oleo_Advantage.jpg');
+  background-position: 0% 0%;
   background-size: cover;
+}
+
+.half-image-section:hover{
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
 }
 
 .half-image-section.right {
@@ -3409,14 +3465,23 @@ figcaption {
 }
 
 .subpage-header {
-  padding-top: 50px;
-  padding-bottom: 100px;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/Beachparty.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/Beachparty.jpg');
+  padding-top: 150px;
+  padding-bottom: 80px;
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/green_leaf.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/green_leaf.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   color: #fff;
   text-align: center;
+}
+
+.subpage-header.products {
+  background-color: white;
+  background-image: none;
+  font-size: 52px;
+  padding-top: 185px;
+  padding-bottom: 20px;
+  color: black;
 }
 
 .subpage-header.pricing-3 {
@@ -3434,8 +3499,8 @@ figcaption {
 
 .subpage-header.about-1 {
   padding-top: 190px;
-  background-image: -webkit-linear-gradient(270deg, rgba(25, 27, 31, .9), rgba(25, 27, 31, .8)), url('../images/Oleo-product-1.jpg');
-  background-image: linear-gradient(180deg, rgba(25, 27, 31, .9), rgba(25, 27, 31, .8)), url('../images/Oleo-product-1.jpg');
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 169, 57, .7), rgba(0, 169, 57, .7)), url('../images/Seattle.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 169, 57, .7), rrgba(0, 169, 57, .7)), url('../images/Seattle.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   text-align: left;
@@ -3696,15 +3761,18 @@ figcaption {
 }
 
 .cta-title {
+  text-align: center;
   font-family: Montserrat, sans-serif;
-  font-size: 24px;
+  font-size: 32px;
+  margin-bottom: 7%;
 }
 
 .cta-title.subtitle {
+  text-align: left;
   margin-top: 20px;
   font-family: Merriweather, serif;
   color: #5a5a5a;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .cta-title.subtitle.buffer {
@@ -6345,6 +6413,10 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
     font-size: 24px;
     line-height: 29px;
   }
+  .thumbnail > img {
+    height: auto;
+    width: auto;
+  }
   .hero-section.color {
     padding-top: 175px;
     padding-bottom: 0px;
@@ -6798,12 +6870,12 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
     margin-top: 19px;
     margin-right: 4px;
     margin-left: 4px;
-    padding-top: 18px;
+    padding-top: 11px;
     border-width: 1px;
     border-color: rgba(0, 0, 0, .1);
   }
   .process-tab-button.special {
-    padding-top: 12px;
+    padding-top: 16px;
   }
   .process-tab-icon {
     height: 13px;

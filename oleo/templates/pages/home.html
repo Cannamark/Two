@@ -6,13 +6,23 @@
       <a class="logo-block w-nav-brand" href="/"><img class="logo" sizes="(max-width: 479px) 61vw, (max-width: 767px) 121.34375px, 161.78125px" src="../static/images/oleo_logo_black_vector.png">
       </a>
       <nav class="nav-menu w-nav-menu" role="navigation">
-        <div class="dropdown w-dropdown" data-delay="0">
-          <a href="{% url 'home' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+      <div class="dropdown w-dropdown" data-delay="0">
+          <a href="{% url 'home' %}"<div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
             <div>Home</div>
         </div></a>
         <div class="dropdown w-dropdown" data-delay="0">
-          <a href="https://shop.oleolife.com/"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
-            <div>Shop</div>
+          <a href="{% url 'cbdinfo' %}"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Why Oleo CBD?</div>
+          </div></a>
+        </div>
+        <div class="dropdown w-dropdown" data-delay="0">
+          <a href="https://shop.oleolife.com/" target="_blank"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Store</div>
+          </div></a>
+        </div>
+        <div class="dropdown w-dropdown" data-delay="0">
+          <a href="#contact"><div class="dropdown-toggle nav-link black w-dropdown-toggle" style="color:black;">
+            <div>Contact Us</div>
           </div></a>
         </div>
         <div class="dropdown w-dropdown" data-delay="0">
@@ -29,42 +39,39 @@
   
   <div class="color hero-section">
     <div class="container hero-container w-container">
-      <div class="small-hero-intro-title" style="color:black;" data-ix="fade-in-on-load-5"><span class="hero-split" data-ix="fade-in-on-load-3">Well Being.</span><span class="hero-split" data-ix="fade-in-on-load-3"> Health.</span><span class="hero-split" data-ix="fade-in-on-load-3"> Ease.</span></div>
+      <div class="small-hero-intro-title" style="color:black;" data-ix="fade-in-on-load-5"><span class="hero-split" data-ix="fade-in-on-load-3">Health.</span><span class="hero-split" data-ix="fade-in-on-load-3"> Well Being.</span><span class="hero-split" data-ix="fade-in-on-load-3"> Ease.</span></div>
     </div>
   </div>
 
   <div class="buffer section">
     <div class="centered container w-container">
       <div class="contact full-centered section-title-wrapper">
-        <h2 class="section-title buffer">CBD is the future of health supplements (or something like that)</h2>
-        <div class="cta-title subtitle buffer">Oleo&reg; CBD powder is the Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</div>
+        <h2 class="section-title buffer">Oleo CBD revolutionizes the effectiveness, reliability, and usability of CBD.</h2>
+        <div class="cta-title subtitle buffer" style="text-align: center;">Our patented encapsulation technology improves the effectiveness of your CBD, lowers the cost of your treatment, and provides exciting and delicious mixes that can be used in any drink or recipe.</div>
       </div>
     </div>
   </div>
 
   <div class="block-section-wrapper w-clearfix">
-    <div class="half-image-section"></div>
+    <a href="{% url 'cbdinfo' %}"><div class="half-image-section"></div></a>
     <div class="half-content-section w-clearfix">
       <div class="content-section-block">
         <div class="full info section-title-wrapper">
-          <h2 class="section-title">Some information on Oleo<span class="smallify">&reg;</span> CBD</h2>
+          <h2 class="section-title">Why use Oleo CBD?</h2>
         </div>
-        <p class="intro-paragraph">Like Why it is the best CBD product on the market.</p>
+        <p class="intro-paragraph">Our patented process provides unique advantages.</p>
         <ul class="checklist w-list-unstyled">
           <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Higher bioavailability.</p>
           </li>
           <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Duis cursus, mi quis viverra ornare, eros dolor.</p>
+            <p>Cleaner, better flavor profiles.</p>
           </li>
           <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Elementum tristique. Duis cursus.</p>
+            <p>Consistant, reliable dosing.</p>
           </li>
         </ul>
-        <a class="button green w-button" href="https://store.oleolife.com/">Visit the Store</a>
+        <a class="button green w-button" href="{% url 'cbdinfo' %}">Learn More</a>
       </div>
     </div>
   </div>
@@ -72,21 +79,21 @@
     <div class="half-content-section left">
       <div class="content-section-block left">
         <div class="full info section-title-wrapper">
-          <h2 class="section-title">Maybe list out health benefits of CBD.</h2>
+          <h2 class="section-title">Curious about CBD?</h2>
         </div>
-        <p class="intro-paragraph">Or it might make sense to swap this content with the content above, so they're more enticed to buy.</p>
+        <p class="intro-paragraph">We strive to inform all of our customers about the benefits of consuming CBD in its most effective form.</p>
         <ul class="checklist w-list-unstyled">
           <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Wonder where we get our CBD?</p>
           </li>
           <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Duis cursus, mi quis viverra ornare, eros dolor.</p>
+            <p>Will CBD get you 'high'?</p>
           </li>
           <li class="checklist-item"><img class="check-icon" src="../static/images/Leaf-26.png">
-            <p>Elementum tristique. Duis cursus.</p>
+            <p>What is CBD?</p>
           </li>
         </ul>
-        <a class="button green w-button" href="#questions">Learn more</a>
+        <a class="button green w-button" href="#what">Let us help</a>
       </div>
     </div>
     <div class="half-image-section right"></div>
@@ -97,18 +104,24 @@
     <div class="container hero-container w-container">
       <div class="hero-slider w-slider" data-animation="slide" data-autoplay="1" data-delay="4000" data-duration="500" data-infinite="1">
         <div class="w-slider-mask">
-          <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Black_Label_3dMesh_Front.png">
+          <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/tea-reshootv2.png">
             <div class="hero-slider-content-block">
-              <h1 class="hero-slider-title" data-ix="slide-title" style="color:white;">Oleo<span class="smallify">&reg;</span> CBD Powder</h1>
-              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s Black Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">Visit the store!</a>
+              <h1 class="hero-slider-title" data-ix="slide-title" style="color:white;">OleoCBD Tea Mix</h1>
+              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Unwind and relax with our new natural tea blends. Drink your tensions away with the all natural effects of organic CBD.</p><a class="button outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com/shop/category/retail-1" target="_blank" style="color:white;">Buy Now</a>
             </div>
           </div>
-          <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Oleo_whitelabel.png">
+          <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/coconut-water-front2.png">
             <div class="hero-slider-content-block">
-              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">Oleo<span class="smallify">&reg;</span> CBD Powder</h1>
-              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s White Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">Visit the store!</a>
+              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">OleoCBD Coconut Water</h1>
+              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">A great, all natural way to hydrate and replenish your body. Loaded with electrolytes, vitamins, minerals. Our CBD Coconut Water allows your body to recover faster after a hard workout and provides a natural way to sooth sore muscles. </p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com/shop/product/16oz-cbd-coconut-water-1-unit-182?category=1" target="_blank" style="color:white;">Buy Now</a>
             </div>
           </div>
+          <!-- <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Oleo_whitelabel.png">
+            <div class="hero-slider-content-block">
+              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">OleoCBD Ready-to-Mix</h1>
+              <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Oleo’s clean and clear Ready-to-Mix formulation allows you to add organic CBD to any drink or food with a simple scoop. Add it to your coffee or smoothie in the morning, a glass of water, or even a bowl of soup. Simply scoop and enjoy!</p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com/collections/cbd-products/products/oleocbd-ready-to-mix" target="_blank" style="color:white;">View Product</a>
+            </div>
+          </div> -->
         </div>
         <div class="hero-slider-arrow w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-left">
           <div class="w-icon-slider-left" style="color:white;"></div>
@@ -116,54 +129,62 @@
         <div class="hero-slider-arrow w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-right">
           <div class="w-icon-slider-right" style="color:white;"></div>
         </div>
-        <div class="slider-bottom-nav w-hidden-main w-round w-slider-nav"></div>
+        <div class="slider-bottom-nav w-round w-slider-nav"></div>
       </div>
     </div>
     </div>
   </div>
 
-  <div class="section" id="questions">
-    <div class="above-image-section container w-container">
-      <div class="feature-info-row w-row">
-        <div class="section-title-wrapper">
-          <div class="section-title"> Frequently Asked Questions</div>
-        </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 1</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
-          </div>
-        </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 2</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
-          </div>
-        </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 3</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
-          </div>
-        </div>
+  <div class="section" id="what">
+    <div class="container w-container">
+      <div class="section-title-wrapper">
+        <h2 class="section-title">What is CBD?</h2>
+        <div class="section-description">CBD has become a highly sought after compound in recent years, taking the natural products industry by storm after receiving highly publicized exposure in the media. Learn more at our <a href="{% url 'cbdinfo' %}" style="color:green;">"Why Oleo CBD?"</a> page.</div>
       </div>
-      <div class="feature-info-row w-row">
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 4</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
-          </div>
+      <div class="process-tabs-line w-hidden-tiny"></div>
+      <div class="process-tabs w-tabs" data-duration-in="300" data-duration-out="100">
+        <div class="process-tab-menu w-tab-menu">
+          <a class="process-tab-button special w--current w-inline-block w-tab-link" data-w-tab="Tab 1">
+            <div>What is CBD?</div>
+          </a>
+          <a class="process-tab-button w-inline-block w-tab-link" data-w-tab="Tab 2">
+            <div>Where do we source our CBD?</div>
+          </a>
+          <a class="process-tab-button w-inline-block w-tab-link" data-w-tab="Tab 3" style="padding-left: 4px;">
+            <div>Is CBD psychoactive?</div>
+          </a>
+          <a class="process-tab-button special w-inline-block w-tab-link" data-w-tab="Tab 4">
+            <div>How is CBD beneficial?</div>
+          </a>
         </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 5</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+        <div class="w-tab-content">
+          <div class="process-tab-pane w-tab-pane" data-w-tab="Tab 1">
+            <div class="process-tab-row w-row">
+              <div class="process-tab-col-left w-col">
+                <div class="process-tab-title">CBD, or cannabidiol, is one of more than 80 cannabinoids found in the cannabis plant. CBD and THC are the most commonly occurring of these compounds, but CBD is non-psychoactive whereas THC is generally consumed because of its ‘high’.</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="feature-info-column w-col w-col-4">
-          <div class="feature-info-block w-clearfix">
-            <div class="feature-info-title">Statement 6</div>
-            <p class="feature-info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+          <div class="process-tab-pane w--tab-active w-tab-pane" data-w-tab="Tab 2">
+            <div class="process-tab-row w-row">
+              <div class="process-tab-col-left w-col">
+                <div class="process-tab-title">We only source from organic, non-GMO, industrial hemp. Because this CBD is sourced only from mature stalks of these industrial hemp plants it is fully legal in all areas of the United States.</div>
+              </div>
+            </div>
+          </div>
+          <div class="process-tab-pane w--tab-active w-tab-pane" data-w-tab="Tab 3">
+            <div class="process-tab-row w-row">
+              <div class="process-tab-col-left w-col">
+                <div class="process-tab-title">No. CBD interacts with our body's naturally occurring systems, but is non-psychotropic unlike THC which causes a 'high'.</div>
+              </div>
+            </div>
+          </div>
+          <div class="process-tab-pane w--tab-active w-tab-pane" data-w-tab="Tab 4">
+            <div class="process-tab-row w-row">
+              <div class="process-tab-col-left w-col">
+                <div class="process-tab-title">We are not at liberty to make medical claims regarding the effects of CBD. We encourage you to do your own research. A 2013 review published in the British Journal of Clinical Pharmacology, as well as a 2003 U.S. Government Patent, found that CBD acts as an antioxidant, reducing free radicals that can cause neurodegenerative disorders. The 2013 study, along with the clinical trials performed in the 2003 patent claims a list many potential health benefits. These and other credible sources can be found with your own due diligence.</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -173,7 +194,7 @@
     <div class="image-section-overlay white-gradient">
       <div class="centered container w-container">
         <div class="section-title-wrapper">
-          <div class="section-title"> Don't hestate to Contact Us!</div>
+          <h2 class="section-title"> We'd love to hear from you.</h2>
         </div>
         <div class="contact-column-left w-col w-col-6">
           <div class="contact-form-block w-form">
