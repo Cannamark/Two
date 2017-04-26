@@ -587,6 +587,10 @@ figcaption {
   background-color: #fff;
 }
 
+.section.about {
+  padding-bottom: 0px;
+}
+
 .section.tint {
   padding-top: 40px;
   padding-bottom: 40px;
