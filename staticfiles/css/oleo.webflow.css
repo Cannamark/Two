@@ -4729,6 +4729,7 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
     line-height: 41px;
   }
   .small-hero-intro-title {
+    line-height: normal;
     margin-bottom: 250px;
   }
   .devices-mockup-right {
@@ -5223,7 +5224,7 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
 
 @media (max-width: 767px) {
   .hero-section.color {
-    padding: 120px 25px 60px;
+    padding: 100px 25px 60px;
   }
   .navbar {
     padding-top: 20px;
@@ -5648,6 +5649,7 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
   }
   .experience-icon-block {
     top: 15px;
+    left: -40px;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
@@ -6422,11 +6424,10 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
     width: auto;
   }
   .hero-section.color {
-    padding-top: 175px;
+    background-size: 750px;
     padding-bottom: 0px;
   }
   .container.hero-container {
-    padding-bottom: 80px;
     text-align: center;
   }
   .navbar {
@@ -6624,7 +6625,7 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
   }
   .hero-split {
     display: block;
-    margin-top: 5px;
+    margin-top: -8px;
     margin-bottom: 25px;
   }
   .hero-description {
