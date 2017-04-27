@@ -19,3 +19,5 @@ def send_email_cbd(request):
             return HttpResponseRedirect('/#contact')
         else:
             return HttpResponse('Make sure all fields are accurate and complete')
+    else:
+        return HttpResponseRedirect('/500')
