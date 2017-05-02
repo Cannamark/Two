@@ -1,7 +1,3 @@
-oleocbd
-====
-
-Cannamark's site for Oleolife CBD and THC products
 
 
 :License: MIT
